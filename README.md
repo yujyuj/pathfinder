@@ -10,12 +10,12 @@ Qt for creating graphical user interfaces
 <br><br>
 
 ### Cell color
-- <span style="color:Rgb(25, 201, 69)">start</span>
-- <span style="color:Rgb(255, 13, 13)">destination</span>
-- <span style="color:Rgb(85, 85, 85)">wall cannot be visited</span>
-- <span style="color:Rgb(255, 255, 255)">unvisited</span>
-- <span style="color:Rgb(158,216,213)">visited</span>
-- <span style="color:Rgb(254, 182, 0)">path</span>
+- green: <span style="color:Rgb(25, 201, 69)">start</span>
+- red: <span style="color:Rgb(255, 13, 13)">destination</span>
+- grey: <span style="color:Rgb(85, 85, 85)">wall cannot be visited</span>
+- white: <span style="color:Rgb(255, 255, 255)">unvisited</span>
+- blue: <span style="color:Rgb(158,216,213)">visited</span>
+- yellow: <span style="color:Rgb(254, 182, 0)">path</span>
 <br><br>
 
 
