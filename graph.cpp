@@ -35,7 +35,7 @@ void Graph::randomize() {
     // fills walls
     vector.resize(num_walls*2);
     QRandomGenerator::global()->fillRange(vector.data(), vector.size());
-    for {int i=0; i<num_walls*2-1; i++) {
+    for (int i=0; i<num_walls*2-1; i++) {
         int x = vector[i]%50;
         int y = vector[i+1]%50;
         if ( (x != source.x || y != source.y) && (x != destination.x || y != destination.y)) // add the wall when cell is not source and not destination
@@ -51,7 +51,7 @@ void Graph::reset_graph() {
     graph_ = std::vector<std::vector<int>>(GRAPH_EDGE, std::vector<int>(GRAPH_EDGE, static_cast<int>(cell_values::unvisited)));
     graph_[source.x][source.y] = static_cast<int>(cell_values::source);
     graph_[destination.x][destination.y] = static_cast<int>(cell_values::destination);
-    for {const auto& wall:walls) {
+    for (const auto& wall:walls) {
         graph_[wall.x][wall.y] = static_cast<int>(cell_values::wall);
     }
 }
@@ -208,7 +208,7 @@ void Graph::draw_path(const std::vector<std::vector<int>>& path) {
     if (path[0][1] == -1)
         return;
 
-    for {unsigned long long i = 0; i < path.size(); i++) {
+    for (unsigned long long i = 0; i < path.size(); i++) {
         graph_[path[i][0]][path[i][1]] = static_cast<int>(cell_values::path);
     }
 
