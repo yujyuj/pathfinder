@@ -1,7 +1,7 @@
 # Path Finder
 
-### Find a path from a starting point to a destination using two algorithms:
-1. Breadth first search
+### Find a path from source to destination in an unweighted graph using two algorithms:
+1. Breadth first search (finds the shortest path)
 2. Depth first search
 <br><br>
 
@@ -10,7 +10,7 @@ Qt for creating graphical user interfaces
 <br><br>
 
 ### Cell color
-- green: <span style="color:Rgb(25, 201, 69)">start</span>
+- green: <span style="color:Rgb(25, 201, 69)">source</span>
 - red: <span style="color:Rgb(255, 13, 13)">destination</span>
 - grey: <span style="color:Rgb(85, 85, 85)">wall cannot be visited</span>
 - white: <span style="color:Rgb(255, 255, 255)">unvisited</span>
